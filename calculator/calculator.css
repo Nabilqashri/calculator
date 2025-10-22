@@ -1,0 +1,84 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+       margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #2c003e, #38006b, #6a1b9a);
+      height: 100vh;
+    }
+    
+    h1{
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: aliceblue;
+      margin-top: 60px;
+    }
+
+    .square {
+      width: 500px;
+      height: 600px;
+      background-color: gray;
+      border-radius: 10px;
+      margin: 40px auto;
+      position: relative;
+    }
+
+    .jawapan {
+      width: 90%;
+      height: 70px;
+      background-color: white;
+      color: black;
+      font-size: 24px;
+      border-radius: 10px;
+      text-align: right;
+      padding: 20px;
+      box-sizing: border-box;
+      margin: auto;
+      padding-top: 20px;
+      position: relative;
+      top: 20px;
+    }
+
+    /* Butang */
+    .btn {
+     position: absolute;
+
+    }
+
+    .btn button {
+      height: 60px;
+      width: 50px;
+      font-size: 30px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      box-shadow:  3px 3px 3px black;
+    }
+    button:hover {
+      opacity:0.4;
+    }
+
+    /* Baris 1 */
+    .one { right: 400px; bottom: 400px; }
+    .two { right: 300px; bottom: 400px; }
+    .three { right: 200px; bottom: 400px; }
+    .four { right: 110px; bottom: 400px; }
+    .add { right: 27px; bottom: 400px; }
+
+    /* Baris 2 */
+    .five { right: 400px; bottom: 300px; }
+    .six { right: 300px; bottom: 300px; }
+    .seven { right: 200px; bottom: 300px; }
+    .eight { right: 110px; bottom: 300px; }
+    .tolak { right: 27px; bottom: 300px; }
+
+    /* Baris 3 */
+    .kosong { right: 400px; bottom: 200px; }
+    .nine { right: 300px; bottom: 200px; }
+    .darab { right: 200px; bottom: 200px; }
+    .bahagi { right: 110px; bottom: 200px; }
+    .equal { right: 27px; bottom: 200px; }
+
+    /* Baris 4 */
+    .clear { right: 27px; bottom: 100px; }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+  <h1>CALCULATOR</h1>
+
+  <div class="square">
+    <div class="jawapan" id="display">0</div>
+
+    <div class="btn one"><button onclick="addValue('1')">1</button></div>
+    <div class="btn two"><button onclick="addValue('2')">2</button></div>
+    <div class="btn three"><button onclick="addValue('3')">3</button></div>
+    <div class="btn four"><button onclick="addValue('4')">4</button></div>
+    <div class="btn add"><button onclick="addValue('+')">+</button></div>
+
+    <div class="btn five"><button onclick="addValue('5')">5</button></div>
+    <div class="btn six"><button onclick="addValue('6')">6</button></div>
+    <div class="btn seven"><button onclick="addValue('7')">7</button></div>
+    <div class="btn eight"><button onclick="addValue('8')">8</button></div>
+    <div class="btn tolak"><button onclick="addValue('-')">-</button></div>
+
+    <div class="btn kosong"><button onclick="addValue('0')">0</button></div>
+    <div class="btn nine"><button onclick="addValue('9')">9</button></div>
+    <div class="btn darab"><button onclick="addValue('*')">x</button></div>
+    <div class="btn bahagi"><button onclick="addValue('/')">/</button></div>
+    <div class="btn equal"><button onclick="calculate()">=</button></div>
+
+    <div class="btn clear"><button onclick="clearDisplay()">C</button></div>
+  </div>
+
+  <script>
+    let display = document.getElementById("display");
+
+    function addValue(val) {
+      if (val === 'x') val = '*';
+      if (display.innerText === "0") {
+        display.innerText = val;
+      } else {
+        display.innerText += val;
+      }
+    }
+
+    function calculate() {
+      try {
+        display.innerText = eval(display.innerText);
+      } catch {
+        display.innerText = "Error";
+      }
+    }
+
+    function clearDisplay() {
+      display.innerText = "0";
+    }
+  </script>
+
+</body>
+</html>
